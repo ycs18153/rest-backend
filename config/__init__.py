@@ -12,8 +12,8 @@ class ServerSettings(BaseSettings):
 
 
 class DatabaseSettings(BaseSettings):
-    DB_URL: str
-    DB_NAME: str
+    DB_URL: str = "mongodb+srv://admin:admin@cluster0.gitsk.mongodb.net/myFirstDatabase?retryWrites=true"
+    DB_NAME: str = "myFirstDatabase"
 
 
 class Settings(CommonSettings, ServerSettings, DatabaseSettings):
